@@ -1,0 +1,68 @@
+OpenMP
+
+g++ -o d13 atomic3_1.cpp -fopenmp
+g++ -o d19 atomic3_26.cpp -fopenmp
+g++ -o d112 d112.cpp -fopenmp
+g++ -o d263 d263.cpp -fopenmp
+g++ -o d269 d269.cpp -fopenmp
+g++ -o d2612 d2612.cpp -fopenmp
+g++ -o g13 g13.cpp -fopenmp
+g++ -o g19 g19.cpp -fopenmp
+g++ -o g112 g112.cpp -fopenmp
+g++ -o g263 g263.cpp -fopenmp
+g++ -o g269 g269.cpp -fopenmp
+g++ -o g2612 g2612.cpp -fopenmp
+g++ -o s13 s13.cpp -fopenmp
+g++ -o s19 s19.cpp -fopenmp
+g++ -o s112 s112.cpp -fopenmp
+g++ -o s263 s263.cpp -fopenmp
+g++ -o s269 s269.cpp -fopenmp
+g++ -o s2612 s2612.cpp -fopenmp
+
+MPI
+
+module load intel/mpi5
+mpicxx -o s1 s1.cpp
+mpicxx -o s26 s26.cpp
+mpicxx -o v1 v1.cpp
+mpicxx -o v26 v26.cpp
+
+SEQUENCE
+
+g++ -o seq1 seq1.cpp -fopenmp
+g++ -o seq26 seq26.cpp -fopenmp
+
+запуск
+
+sbatch s1_3.sh
+sbatch s1_9.sh
+sbatch s1_12.sh
+sbatch s26_3.sh
+sbatch s26_9.sh
+sbatch s26_12.sh
+sbatch v1_3.sh
+sbatch v1_9.sh
+sbatch v1_12.sh
+sbatch v26_3.sh
+sbatch v26_9.sh
+sbatch v26_12.sh
+sbatch seq1.sh
+sbatch seq26.sh
+sbatch d13.sh
+sbatch d19.sh
+sbatch d112.sh
+sbatch d263.sh
+sbatch d269.sh
+sbatch d2612.sh
+sbatch g13.sh
+sbatch g19.sh
+sbatch g112.sh
+sbatch g263.sh
+sbatch g269.sh
+sbatch g2612.sh
+sbatch s13.sh
+sbatch s19.sh
+sbatch s112.sh
+sbatch s263.sh
+sbatch s269.sh
+sbatch s2612.sh
